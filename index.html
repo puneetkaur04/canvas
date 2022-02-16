@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="circle" width="600" height="300" style="border:7px solid lightcoral;"> </canvas>
+    <script>
+        var c = document.getElementById("circle");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(285, 150, 120, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.fillStyle="lightcoral";
+        ctx.fill();
+        ctx.font = "35px Arial";
+        ctx.strokeText("Princess Kaur", 175, 160);
+    </script>
+</body>
+</html>
